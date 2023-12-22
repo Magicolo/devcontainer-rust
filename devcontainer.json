@@ -1,11 +1,22 @@
 {
-    "name": "develop",
-    "dockerComposeFile": "docker-compose.yaml",
-    "service": "develop",
-    "workspaceFolder": "/develop",
-    "shutdownAction": "stopCompose",
+    "dockerFile": "Dockerfile",
+    "containerUser": "${localEnv:USER}",
+    "remoteUser": "${localEnv:USER}",
+    "mounts": [
+        {
+            "source": "${localEnv:HOME}/.ssh",
+            "target": "${localEnv:HOME}/.ssh",
+            "type": "bind"
+        },
+        {
+            "source": "${localEnv:HOME}/.gitconfig",
+            "target": "${localEnv:HOME}/.gitconfig",
+            "type": "bind"
+        }
+    ],
     "features": {
-        "ghcr.io/devcontainers/features/common-utils:latest": {}
+        "ghcr.io/devcontainers/features/common-utils:latest": {},
+        "ghcr.io/devcontainers/features/docker-outside-of-docker": {}
     },
     "customizations": {
         "vscode": {
@@ -14,6 +25,7 @@
                 "github.vscode-github-actions",
                 "PKief.material-icon-theme",
                 "mutantdino.resourcemonitor",
+                "ms-azuretools.vscode-docker",
                 "yzhang.markdown-all-in-one",
                 "mhutchie.git-graph",
                 "vadimcn.vscode-lldb",
