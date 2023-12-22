@@ -1,0 +1,29 @@
+{
+    "name": "develop",
+    "dockerComposeFile": "docker-compose.yaml",
+    "service": "develop",
+    "workspaceFolder": "/develop",
+    "shutdownAction": "stopCompose",
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:latest": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "streetsidesoftware.code-spell-checker",
+                "github.vscode-github-actions",
+                "PKief.material-icon-theme",
+                "mutantdino.resourcemonitor",
+                "yzhang.markdown-all-in-one",
+                "mhutchie.git-graph",
+                "vadimcn.vscode-lldb",
+                "serayuzgur.crates",
+                "rust-lang.rust-analyzer",
+                "Codeium.codeium"
+            ]
+        },
+        "settings": {
+            "rust-analyzer.check.command": "clippy"
+        }
+    }
+}

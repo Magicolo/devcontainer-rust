@@ -1,0 +1,10 @@
+services:
+  develop:
+    image: develop
+    build: .
+    container_name: develop
+    user: $USER
+    entrypoint: sleep infinity
+    volumes:
+      - $HOME/.ssh:$HOME/.ssh
+      - ..:/develop
