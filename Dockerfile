@@ -7,4 +7,5 @@ RUN rustup install stable nightly
 RUN rustup default stable
 RUN rustup component add rustfmt clippy
 RUN cargo install cargo-expand cargo-audit cargo-msrv
-ENTRYPOINT rustup update && cargo clean && cargo update && cargo build && sleep infinity
+RUN curl --silent https://raw.githubusercontent.com/nektos/act/master/install.sh | bash
+CMD rustup update && cargo clean && cargo update && cargo build && sleep infinity
