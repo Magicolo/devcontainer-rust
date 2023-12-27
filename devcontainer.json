@@ -38,7 +38,10 @@
             ]
         },
         "settings": {
-            "rust-analyzer.check.command": "clippy"
+            "rust-analyzer.check.command": "clippy",
+            "editor.formatOnPaste": true,
+            "editor.formatOnSave": true,
+            "editor.formatOnSaveMode": "modifications"
         }
     }
 }
