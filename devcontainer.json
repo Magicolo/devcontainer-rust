@@ -35,13 +35,13 @@
                 "serayuzgur.crates",
                 "rust-lang.rust-analyzer",
                 "Codeium.codeium"
-            ]
-        },
-        "settings": {
-            "rust-analyzer.check.command": "clippy",
-            "editor.formatOnPaste": true,
-            "editor.formatOnSave": true,
-            "editor.formatOnSaveMode": "modifications"
+            ],
+            "settings": {
+                "rust-analyzer.check.command": "clippy",
+                "editor.formatOnPaste": true,
+                "editor.formatOnSave": true,
+                "editor.formatOnSaveMode": "modifications"
+            }
         }
     }
 }
