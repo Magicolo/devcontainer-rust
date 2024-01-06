@@ -34,13 +34,17 @@
                 "vadimcn.vscode-lldb",
                 "serayuzgur.crates",
                 "rust-lang.rust-analyzer",
+                "tamasfe.even-better-toml",
                 "Codeium.codeium"
             ],
             "settings": {
                 "rust-analyzer.check.command": "clippy",
                 "editor.formatOnPaste": true,
                 "editor.formatOnSave": true,
-                "editor.formatOnSaveMode": "modifications"
+                "editor.formatOnSaveMode": "modifications",
+                "files.watcherExclude": {
+                    "**/target/**": true
+                }
             }
         }
     }

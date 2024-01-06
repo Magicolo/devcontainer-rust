@@ -2,7 +2,7 @@ FROM rust
 
 RUN apt update
 RUN apt upgrade --yes
-RUN apt install --yes git curl pkg-config libssl-dev
+RUN apt install --yes git curl pkg-config lldb libssl-dev
 RUN rustup install stable nightly
 RUN rustup default stable
 RUN rustup component add rustfmt clippy
