@@ -34,6 +34,7 @@
                 "vadimcn.vscode-lldb",
                 "serayuzgur.crates",
                 "rust-lang.rust-analyzer",
+                "Swellaby.vscode-rust-test-adapter",
                 "tamasfe.even-better-toml",
                 "Codeium.codeium"
             ],
