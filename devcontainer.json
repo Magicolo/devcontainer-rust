@@ -43,6 +43,7 @@
                 "editor.formatOnPaste": true,
                 "editor.formatOnSave": true,
                 "editor.formatOnSaveMode": "modifications",
+                "testExplorer.useNativeTesting": true,
                 "files.watcherExclude": {
                     "**/target/**": true
                 }
